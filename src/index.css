@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+#root {
+  width: 100%;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile-header {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.current-role {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.profile-details {
+  padding: 20px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.profile-details strong {
+  font-weight: 600;
+}
+
+.education-history {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0 0;
+}
+
+.container {
+  background-color: rgba(0, 128, 0, 0.527);
+  height: 105vh;
+  width: 100%;
+}
+
+.row {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+
+.top {
+  height: 20px;
+  background-color: rgba(0, 128, 0, 0.527);
+}
+
+nav {
+  margin-top: 10px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title__span {
+  font-size: 48px;
+  margin-left: 24px;
+}
+
+.logo {
+  border-radius: 10px;
+}
+
+.profile__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrows__wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 85vh;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left__arrow,
+.right__arrow,
+.arrow--hidden {
+  padding: 12px;
+  margin: 12px;
+  margin-bottom: 24px;
+  border-radius: 50px;
+}
+
+.left__arrow {
+  margin-left: 64px;
+}
+
+.right__arrow {
+  margin-right: 64px;
+}
+
+.email-logo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img__linked {
+  width: 50px;
+  height: 50px;
+}
+
+.arrow--hidden {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.arrow__btn {
+  height: 40px;
+  width: 40px;
+}
+
+/*
+
+Dropdown
+
+*/
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.dd__container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-btn:hover {
+  background-color: #ebebf3;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%; /* Slightly below the button */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dropdown__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f5;
+}
+
+/* Input for Search */
+.dropdown-search {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-bottom: none; /* Removes duplicate border with dropdown menu */
+  border-radius: 5px 5px 0 0; /* Rounded corners on top */
+  outline: none;
+}
+
+.dropdown-search:focus {
+  border-color: #999; /* Highlight border on focus */
+}
+
+/* No Results Message */
+.no-results {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+
+.dd__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  margin-left: 8px;
+}
